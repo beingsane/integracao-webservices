@@ -1,4 +1,4 @@
-integracao-webservices
+Integração de sistemas baseada em Webservices
 ======================
 
 Repositório para integração de aplicações utilizando webservices, com: 
