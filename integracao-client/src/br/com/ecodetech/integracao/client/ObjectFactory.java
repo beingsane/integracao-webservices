@@ -24,14 +24,14 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetCliente_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getCliente");
-    private final static QName _GetClienteResponse_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getClienteResponse");
-    private final static QName _GetMensagem_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getMensagem");
-    private final static QName _GetListaClienteResponse_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getListaClienteResponse");
-    private final static QName _GetListaProdutoResponse_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getListaProdutoResponse");
-    private final static QName _GetListaCliente_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getListaCliente");
-    private final static QName _GetMensagemResponse_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getMensagemResponse");
-    private final static QName _GetListaProduto_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "getListaProduto");
+    private final static QName _GetMensagemResponse_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getMensagemResponse");
+    private final static QName _GetListaCliente_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getListaCliente");
+    private final static QName _GetListaProduto_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getListaProduto");
+    private final static QName _GetListaClienteResponse_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getListaClienteResponse");
+    private final static QName _GetCliente_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getCliente");
+    private final static QName _GetClienteResponse_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getClienteResponse");
+    private final static QName _GetMensagem_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getMensagem");
+    private final static QName _GetListaProdutoResponse_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "getListaProdutoResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.ecodetech.integracao.client
@@ -129,10 +129,46 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetMensagemResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getMensagemResponse")
+    public JAXBElement<GetMensagemResponse> createGetMensagemResponse(GetMensagemResponse value) {
+        return new JAXBElement<GetMensagemResponse>(_GetMensagemResponse_QNAME, GetMensagemResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaCliente }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getListaCliente")
+    public JAXBElement<GetListaCliente> createGetListaCliente(GetListaCliente value) {
+        return new JAXBElement<GetListaCliente>(_GetListaCliente_QNAME, GetListaCliente.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaProduto }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getListaProduto")
+    public JAXBElement<GetListaProduto> createGetListaProduto(GetListaProduto value) {
+        return new JAXBElement<GetListaProduto>(_GetListaProduto_QNAME, GetListaProduto.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaClienteResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getListaClienteResponse")
+    public JAXBElement<GetListaClienteResponse> createGetListaClienteResponse(GetListaClienteResponse value) {
+        return new JAXBElement<GetListaClienteResponse>(_GetListaClienteResponse_QNAME, GetListaClienteResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetCliente }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getCliente")
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getCliente")
     public JAXBElement<GetCliente> createGetCliente(GetCliente value) {
         return new JAXBElement<GetCliente>(_GetCliente_QNAME, GetCliente.class, null, value);
     }
@@ -141,7 +177,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetClienteResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getClienteResponse")
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getClienteResponse")
     public JAXBElement<GetClienteResponse> createGetClienteResponse(GetClienteResponse value) {
         return new JAXBElement<GetClienteResponse>(_GetClienteResponse_QNAME, GetClienteResponse.class, null, value);
     }
@@ -150,54 +186,18 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetMensagem }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getMensagem")
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getMensagem")
     public JAXBElement<GetMensagem> createGetMensagem(GetMensagem value) {
         return new JAXBElement<GetMensagem>(_GetMensagem_QNAME, GetMensagem.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaClienteResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getListaClienteResponse")
-    public JAXBElement<GetListaClienteResponse> createGetListaClienteResponse(GetListaClienteResponse value) {
-        return new JAXBElement<GetListaClienteResponse>(_GetListaClienteResponse_QNAME, GetListaClienteResponse.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListaProdutoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getListaProdutoResponse")
+    @XmlElementDecl(namespace = "http://webservices.integracao.ecodetech.com.br/", name = "getListaProdutoResponse")
     public JAXBElement<GetListaProdutoResponse> createGetListaProdutoResponse(GetListaProdutoResponse value) {
         return new JAXBElement<GetListaProdutoResponse>(_GetListaProdutoResponse_QNAME, GetListaProdutoResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaCliente }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getListaCliente")
-    public JAXBElement<GetListaCliente> createGetListaCliente(GetListaCliente value) {
-        return new JAXBElement<GetListaCliente>(_GetListaCliente_QNAME, GetListaCliente.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetMensagemResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getMensagemResponse")
-    public JAXBElement<GetMensagemResponse> createGetMensagemResponse(GetMensagemResponse value) {
-        return new JAXBElement<GetMensagemResponse>(_GetMensagemResponse_QNAME, GetMensagemResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListaProduto }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://utilitarios.integracao.ecodetech.com.br/", name = "getListaProduto")
-    public JAXBElement<GetListaProduto> createGetListaProduto(GetListaProduto value) {
-        return new JAXBElement<GetListaProduto>(_GetListaProduto_QNAME, GetListaProduto.class, null, value);
     }
 
 }

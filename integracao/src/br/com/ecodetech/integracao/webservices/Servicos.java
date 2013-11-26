@@ -1,4 +1,4 @@
-package br.com.ecodetech.integracao.utilitarios;
+package br.com.ecodetech.integracao.webservices;
 
 import java.util.List;
 
@@ -20,6 +20,8 @@ import br.com.ecodetech.integracao.model.facade.ModelFacade;
  * 
  * 2. Acesse a raiz do projeto cliente: cd /home/...caminho completo
  * aqui.../workspace/integracao-client
+ * 
+ * 2.1 Exemplo: cd /home/marciopalheta/git/integracao-webservices/integracao-client
  * 
  * 3. DIGITE: wsimport -s src -d bin -p br.com.ecodetech.integracao.client
  * http://localhost:8080/integracao/ServicosService?wsdl

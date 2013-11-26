@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ServicosService", targetNamespace = "http://utilitarios.integracao.ecodetech.com.br/", wsdlLocation = "http://localhost:8080/integracao/ServicosService?wsdl")
+@WebServiceClient(name = "ServicosService", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", wsdlLocation = "http://localhost:8080/integracao/ServicosService?wsdl")
 public class ServicosService
     extends Service
 {
 
     private final static URL SERVICOSSERVICE_WSDL_LOCATION;
     private final static WebServiceException SERVICOSSERVICE_EXCEPTION;
-    private final static QName SERVICOSSERVICE_QNAME = new QName("http://utilitarios.integracao.ecodetech.com.br/", "ServicosService");
+    private final static QName SERVICOSSERVICE_QNAME = new QName("http://webservices.integracao.ecodetech.com.br/", "ServicosService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class ServicosService
      */
     @WebEndpoint(name = "ServicosPort")
     public Servicos getServicosPort() {
-        return super.getPort(new QName("http://utilitarios.integracao.ecodetech.com.br/", "ServicosPort"), Servicos.class);
+        return super.getPort(new QName("http://webservices.integracao.ecodetech.com.br/", "ServicosPort"), Servicos.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class ServicosService
      */
     @WebEndpoint(name = "ServicosPort")
     public Servicos getServicosPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://utilitarios.integracao.ecodetech.com.br/", "ServicosPort"), Servicos.class, features);
+        return super.getPort(new QName("http://webservices.integracao.ecodetech.com.br/", "ServicosPort"), Servicos.class, features);
     }
 
     private static URL __getWsdlLocation() {

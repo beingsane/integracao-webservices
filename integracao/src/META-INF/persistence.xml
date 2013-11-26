@@ -25,10 +25,10 @@
 		</properties>
 	</persistence-unit>
 	
-	<persistence-unit name="notasLocal"
+	<!-- persistence-unit name="notasLocal"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<!-- Para rodar fora do servidor de JEE, precisamo marcar as classes -->
+		< Para rodar fora do servidor de JEE, precisamo marcar as classes >
 		<class>br.com.ecodetech.integracao.model.bean.Cliente</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
@@ -41,5 +41,5 @@
 			<property name="hibernate.connection.username" value="root" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 		</properties>
-	</persistence-unit>
+	</persistence-unit-->
 </persistence>

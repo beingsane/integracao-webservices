@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="categoria">
  *   &lt;complexContent>
- *     &lt;extension base="{http://utilitarios.integracao.ecodetech.com.br/}abstractEntityBean">
+ *     &lt;extension base="{http://webservices.integracao.ecodetech.com.br/}abstractEntityBean">
  *       &lt;sequence>
  *         &lt;element name="nome" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>

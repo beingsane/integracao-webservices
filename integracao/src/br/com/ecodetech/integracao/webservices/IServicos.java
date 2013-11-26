@@ -1,4 +1,4 @@
-package br.com.ecodetech.integracao.utilitarios;
+package br.com.ecodetech.integracao.webservices;
 
 import java.util.List;
 
