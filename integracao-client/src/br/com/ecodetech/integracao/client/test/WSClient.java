@@ -29,6 +29,13 @@ public class WSClient {
 		for (Produto p : listaProduto) {
 			System.out.println(p.getNome()+" - "+p.getCategoria().getNome());
 		}
-		System.out.println("======================");
+		
+		System.out.println("\n=========== CLIENTES ===========");
+		String xml = servicos.getListaClienteXML();
+		System.out.println(xml);
+
+		System.out.println("\n=========== PRODUTOS ===========");
+		xml = servicos.getListaProdutoXML();
+		System.out.println(xml);
 	}
 }

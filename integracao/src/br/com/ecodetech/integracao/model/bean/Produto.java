@@ -13,6 +13,19 @@ public class Produto extends AbstractEntityBean {
 	private Double quantidade;
 	@ManyToOne
 	private Categoria categoria;
+	
+	public Produto() {
+	}
+
+	public Produto(String nome, String descricao, Double preco,
+			Double quantidade, Categoria categoria) {
+		super();
+		this.nome = nome;
+		this.descricao = descricao;
+		this.preco = preco;
+		this.quantidade = quantidade;
+		this.categoria = categoria;
+	}
 
 	public String getNome() {
 		return nome;

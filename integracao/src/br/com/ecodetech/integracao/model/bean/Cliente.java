@@ -11,7 +11,7 @@ public class Cliente extends AbstractEntityBean{
 
 	public Cliente() {
 	}
-	
+
 	public Cliente(String nome, String email) {
 		super();
 		this.nome = nome;

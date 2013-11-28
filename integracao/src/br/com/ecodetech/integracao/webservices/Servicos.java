@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import br.com.ecodetech.integracao.model.bean.Cliente;
 import br.com.ecodetech.integracao.model.bean.Produto;
 import br.com.ecodetech.integracao.model.facade.ModelFacade;
+import br.com.ecodetech.integracao.xml.XMLWriter;
 
 /**
  * Para gerar as classes do modulo cliente:
@@ -35,6 +36,8 @@ public class Servicos implements IServicos {
 	private transient Logger logger;
 	@Inject
 	private ModelFacade facade;
+	@Inject
+	private XMLWriter xmlWriter;
 
 	@WebMethod
 	public String getMensagem(@WebParam(name = "nomeUsuario") String nome) {
@@ -59,6 +62,18 @@ public class Servicos implements IServicos {
 	public List<Produto> getListaProduto() {
 		logger.info("Metodo executado: getListaProduto()");
 		return facade.listarProduto();
+	}
+
+	@Override
+	public String getListaClienteXML() {
+		logger.info("Metodo executado: getListaClienteXML()");
+		return xmlWriter.convertListaClientesToXML(facade.listarCliente());
+	}
+
+	@Override
+	public String getListaProdutoXML() {
+		logger.info("Metodo executado: getListaProdutoXML()");
+		return xmlWriter.convertListaProdutosToXML(facade.listarProduto());
 	}
 
 }

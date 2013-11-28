@@ -28,6 +28,30 @@ public interface Servicos {
     /**
      * 
      * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListaProdutoXML", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetListaProdutoXML")
+    @ResponseWrapper(localName = "getListaProdutoXMLResponse", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetListaProdutoXMLResponse")
+    @Action(input = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaProdutoXMLRequest", output = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaProdutoXMLResponse")
+    public String getListaProdutoXML();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListaClienteXML", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetListaClienteXML")
+    @ResponseWrapper(localName = "getListaClienteXMLResponse", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetListaClienteXMLResponse")
+    @Action(input = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaClienteXMLRequest", output = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaClienteXMLResponse")
+    public String getListaClienteXML();
+
+    /**
+     * 
+     * @return
      *     returns java.util.List<br.com.ecodetech.integracao.client.Cliente>
      */
     @WebMethod
@@ -36,21 +60,6 @@ public interface Servicos {
     @ResponseWrapper(localName = "getListaClienteResponse", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetListaClienteResponse")
     @Action(input = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaClienteRequest", output = "http://webservices.integracao.ecodetech.com.br/Servicos/getListaClienteResponse")
     public List<Cliente> getListaCliente();
-
-    /**
-     * 
-     * @param idCliente
-     * @return
-     *     returns br.com.ecodetech.integracao.client.Cliente
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getCliente", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetCliente")
-    @ResponseWrapper(localName = "getClienteResponse", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetClienteResponse")
-    @Action(input = "http://webservices.integracao.ecodetech.com.br/Servicos/getClienteRequest", output = "http://webservices.integracao.ecodetech.com.br/Servicos/getClienteResponse")
-    public Cliente getCliente(
-        @WebParam(name = "idCliente", targetNamespace = "")
-        Long idCliente);
 
     /**
      * 
@@ -66,6 +75,21 @@ public interface Servicos {
     public String getMensagem(
         @WebParam(name = "nomeUsuario", targetNamespace = "")
         String nomeUsuario);
+
+    /**
+     * 
+     * @param idCliente
+     * @return
+     *     returns br.com.ecodetech.integracao.client.Cliente
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getCliente", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetCliente")
+    @ResponseWrapper(localName = "getClienteResponse", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", className = "br.com.ecodetech.integracao.client.GetClienteResponse")
+    @Action(input = "http://webservices.integracao.ecodetech.com.br/Servicos/getClienteRequest", output = "http://webservices.integracao.ecodetech.com.br/Servicos/getClienteResponse")
+    public Cliente getCliente(
+        @WebParam(name = "idCliente", targetNamespace = "")
+        Long idCliente);
 
     /**
      * 

@@ -8,6 +8,15 @@ public class Categoria extends AbstractEntityBean {
 
 	private String nome;
 
+	public Categoria() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Categoria(String nome) {
+		super();
+		this.nome = nome;
+	}
+
 	public String getNome() {
 		return nome;
 	}
