@@ -6,7 +6,7 @@
 		<!-- Provider de JPA -->
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<!-- Nome do Datasource que foi definido no GlassFish -->
-		<jta-data-source>MySQL_JNDI</jta-data-source>
+		<jta-data-source>MySQL_Integracao</jta-data-source>
 		<!-- Faz com que o servidor JEE procure anotacoes em classes JavaBean -->
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>

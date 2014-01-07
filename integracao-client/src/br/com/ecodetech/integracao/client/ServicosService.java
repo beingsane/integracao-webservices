@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ServicosService", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", wsdlLocation = "http://localhost:8080/integracao/ServicosService?wsdl")
+@WebServiceClient(name = "ServicosService", targetNamespace = "http://webservices.integracao.ecodetech.com.br/", wsdlLocation = "http://localhost.89:8080/integracao/ServicosService?wsdl")
 public class ServicosService
     extends Service
 {

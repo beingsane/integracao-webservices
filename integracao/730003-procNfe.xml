@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="2.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe Id="NFe13131099171171101338550500000000031910730003" versao="2.00">
+            <ide>
+                <cUF>13</cUF>
+                <cNF>91073000</cNF>
+                <natOp>VENDA</natOp>
+                <indPag>0</indPag>
+                <mod>55</mod>
+                <serie>50</serie>
+                <nNF>3</nNF>
+                <dEmi>2013-10-31</dEmi>
+                <tpNF>1</tpNF>
+                <cMunFG>1302603</cMunFG>
+                <tpImp>1</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>3</cDV>
+                <tpAmb>2</tpAmb>
+                <finNFe>1</finNFe>
+                <procEmi>3</procEmi>
+                <verProc>2.2.19</verProc>
+            </ide>
+            <emit>
+                <CNPJ>99171171101338</CNPJ>
+                <xNome>Empresa Teste</xNome>
+                <enderEmit>
+                    <xLgr>Rua Andre Araujo</xLgr>
+                    <nro>150</nro>
+                    <xBairro>Aleixo</xBairro>
+                    <cMun>1302603</cMun>
+                    <xMun>Manaus</xMun>
+                    <UF>AM</UF>
+                    <CEP>69060000</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                </enderEmit>
+                <IE>997777770</IE>
+                <IM>8459806</IM>
+                <CNAE>4321500</CNAE>
+                <CRT>3</CRT>
+            </emit>
+            <dest>
+                <CPF>19327307615</CPF>
+                <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+                <enderDest>
+                    <xLgr>RUA ANDRE ARAUJO</xLgr>
+                    <nro>140</nro>
+                    <xBairro>ALEIXO</xBairro>
+                    <cMun>1302603</cMun>
+                    <xMun>Manaus</xMun>
+                    <UF>AM</UF>
+                    <CEP>69060000</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                </enderDest>
+                <IE/>
+            </dest>
+            <det nItem="1">
+                <prod>
+                    <cProd>1</cProd>
+                    <cEAN/>
+                    <xProd>Mão de obra - troca de embreagem</xProd>
+                    <NCM>99</NCM>
+                    <CFOP>5933</CFOP>
+                    <uCom>un</uCom>
+                    <qCom>1.0000</qCom>
+                    <vUnCom>500.0000000000</vUnCom>
+                    <vProd>500.00</vProd>
+                    <cEANTrib/>
+                    <uTrib>un</uTrib>
+                    <qTrib>1.0000</qTrib>
+                    <vUnTrib>500.0000000000</vUnTrib>
+                    <indTot>0</indTot>
+                </prod>
+                <imposto>
+                    <ISSQN>
+                        <vBC>500.00</vBC>
+                        <vAliq>5.00</vAliq>
+                        <vISSQN>25.00</vISSQN>
+                        <cMunFG>1302603</cMunFG>
+                        <cListServ>1401</cListServ>
+                        <cSitTrib>N</cSitTrib>
+                    </ISSQN>
+                    <PIS>
+                        <PISNT>
+                            <CST>07</CST>
+                        </PISNT>
+                    </PIS>
+                    <COFINS>
+                        <COFINSNT>
+                            <CST>07</CST>
+                        </COFINSNT>
+                    </COFINS>
+                </imposto>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>0.00</vBC>
+                    <vICMS>0.00</vICMS>
+                    <vBCST>0.00</vBCST>
+                    <vST>0.00</vST>
+                    <vProd>0.00</vProd>
+                    <vFrete>0.00</vFrete>
+                    <vSeg>0.00</vSeg>
+                    <vDesc>0.00</vDesc>
+                    <vII>0.00</vII>
+                    <vIPI>0.00</vIPI>
+                    <vPIS>0.00</vPIS>
+                    <vCOFINS>0.00</vCOFINS>
+                    <vOutro>0.00</vOutro>
+                    <vNF>500.00</vNF>
+                </ICMSTot>
+                <ISSQNtot>
+                    <vServ>500.00</vServ>
+                    <vBC>500.00</vBC>
+                    <vISS>25.00</vISS>
+                </ISSQNtot>
+            </total>
+            <transp>
+                <modFrete>9</modFrete>
+            </transp>
+        </infNFe>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#NFe13131099171171101338550500000000031910730003"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>juDLRGn1yirWVcku52vWOa+ok/g=</DigestValue></Reference></SignedInfo><SignatureValue>yAF8Oqn92HY1vBBQfnwZ+8wOjRcCvktltMK7kMlNZXIj1H/f3q3OmKqM8piOENq7O5waAJTUFaja
+QFf3PWkYIso/YU197v3FF6phbNzyl812LlKYCpOHFFnY66yulooB3SmySxHFa1wwPQpMDjHZ9I91
+hek+i5HAKbZJJ1ieQQc=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEyzCCA7OgAwIBAgIDMzY1MA0GCSqGSIb3DQEBBQUAMIGbMQswCQYDVQQIEwJSUzEdMBsGA1UE
+CxMUVGVzdGUgUHJvamV0byBORmUgUlMxHTAbBgNVBAoTFFRlc3RlIFByb2pldG8gTkZlIFJTMRUw
+EwYDVQQHEwxQT1JUTyBBTEVHUkUxCzAJBgNVBAYTAkJSMSowKAYDVQQDEyFORmUyIC0gQUMgSW50
+ZXJtZWRpYXJpYSAxIHYyIC0gRzIwHhcNMTIxMTA5MTUxMTU1WhcNMTMxMTA5MTUxMTU1WjCBnTEL
+MAkGA1UECBMCUlMxHTAbBgNVBAsTFFRlc3RlIFByb2pldG8gTkZlIFJTMR0wGwYDVQQKExRUZXN0
+ZSBQcm9qZXRvIE5GZSBSUzEVMBMGA1UEBxMMUE9SVE8gQUxFR1JFMQswCQYDVQQGEwJCUjEsMCoG
+A1UEAxMjRXF1aXBlIE5GLWUgQW1hem9uYXM6OTkxNzExNzExMDEzMzgwgZ8wDQYJKoZIhvcNAQEB
+BQADgY0AMIGJAoGBAPGo22XkMsngf01moG2uHdITMbJsur9uQTbRIAfugJp+RLqLBs1RGf+P//hs
+bk25SYRIDNPj/w+f1dKbU8k/vnElrLjpKtiiZSNC1t6YUrtWXdpXzO0JzTii1TWzq676cmX0sSLd
+10XPMPdlNEwpUpnaLvNbx+fOmX3ExPNyVrwxAgMBAAGjggGWMIIBkjAiBgNVHSMBAQAEGDAWgBRt
+Kt39Tucx8jiTmMRP/Lu9k2McuzAPBgNVHRMBAf8EBTADAQEAMA8GA1UdDwEB/wQFAwMA4AAwDAYD
+VR0gAQEABAIwADCBwwYDVR0RAQEABIG4MIG1oDgGBWBMAQMEoC8ELTEyMDQxOTY0MTg4MDMzMzQy
+MjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKArBgVgTAEDAqAiBCBGcmFuY2lzY28gRWx6ZW5p
+ciBEb21pbmdvcyBHb21lc6AZBgVgTAEDA6AQBA45OTE3MTE3MTEwMTMzOKAXBgVgTAEDB6AOBAww
+MDAwMDAwMDAwMDCBGGZlbHplbmlyQHNlZmF6LmFtLmdvdi5icjAgBgNVHSUBAf8EFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwVAYDVR0fAQEABEowSDBGoESgQoZAaHR0cDovL25mZWNlcnRpZmljYWRv
+LnNlZmF6LnJzLmdvdi5ici9MQ1IvQUNJbnRlcm1lZGlhcmlhMzUwLmNybDANBgkqhkiG9w0BAQUF
+AAOCAQEAcxd6BWx+1ZBvhaxa7/pNCrMyYigCr/kIP0EB4nsv3ZimHIr8O6oY6uW5cDC3Q85Qtip1
+6j+cEFI4O7RBDfM1zP2zlej50UUBmZyHZKrpAoH+LDzLZxd04/ETkpPlhutcHkEwcJ8h06ix6ks8
+ZaWcxhSAF/Z10uxS5DoDn3FaOoPJl87tSUHuogNBuFdpA/pqCiq0vEkNtzAeAEsUUkbHV8HR1D3T
+vniHt/xElagBW6JOrN/0WMn4KdA5kKiPARXHqWM8EuiAhBs4RG0qS9iYNeBPMzjgcDPJly8CkOcc
+4S56c2UuRbduxw3XOLp6qU4YpEojDmASY5DKtYQMOyKd3w==</X509Certificate></X509Data></KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe versao="2.00">
+        <infProt Id="NFe00">
+            <tpAmb>2</tpAmb>
+            <verAplic>AM2.00</verAplic>
+            <chNFe>13131099171171101338550500000000031910730003</chNFe>
+            <dhRecbto>2013-11-01T10:10:49</dhRecbto>
+            <nProt>113130002239966</nProt>
+            <digVal>juDLRGn1yirWVcku52vWOa+ok/g=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>
